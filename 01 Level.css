@@ -1,0 +1,125 @@
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #ececd0;
+  font-family: "Poppins", sans-serif;
+  cursor: url("https://cdn-icons-png.flaticon.com/512/12/12394.png"), auto;
+}
+.message {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.message img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.canvas {
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background-color: #fad201;
+  border-radius: 15px;
+  border: none;
+  overflow: hidden;
+}
+.border03 {
+  background-color: #5a4266;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: abid 7s linear infinite;
+  z-index: 1;
+  transition: 1s;
+}
+@keyframes abid {
+  0% {
+    top: 235px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 225px;
+  }
+}
+.border03::before {
+  z-index: -18;
+  position: absolute;
+  width: 5px;
+  height: 100px;
+  top: 0;
+  left: 45%;
+  content: "";
+  background-color: #5a4266;
+}
+.border02 {
+  background-color: #f13627;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+
+  transform: translate(-50%, -50%);
+}
+.border01 {
+  z-index: 3;
+
+  width: 30px;
+  height: 30px;
+  background: greenyellow;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  cursor: crosshair;
+  transform: translate(-50%, -50%);
+}
+.middle {
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  background-color: #feb10c;
+  z-index: 99;
+}
+#copyright {
+  color: #949494;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+.next-level-2 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
